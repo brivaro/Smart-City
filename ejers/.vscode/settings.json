@@ -1,0 +1,13 @@
+{
+    "java.project.sourcePaths": [
+        "Paso1/smartcar/src",
+        "Paso1/smartcity/src",
+        "Paso1/smartroad/src",
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
+    "java.dependency.packagePresentation": "hierarchical",
+    "java.configuration.updateBuildConfiguration": "automatic"
+}
