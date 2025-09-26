@@ -60,12 +60,14 @@ public class SmartCity_RoadIncidentsSubscriber implements MqttCallback {
 		// DO SOME MAGIC HERE!
 		
 		// La comento porque esa linea solo funciona conectado a la red iot de la uni
-		String url = "http://ttmi021.iot.upv.es:8182/car/engine";
+		//String url = "http://ttmi021.iot.upv.es:8182/car/engine";
 		// La sustituyo por una url virtual
 		// El vehículo virtual 21 jugará el rol de ambulancia
-		// String url = "http://tambori.dsic.upv.es:10021/car/engine";
+		String url = "http://tambori.dsic.upv.es:10021/car/engine";
 		
 		String putPayload = "{action:forward}";
+
+		System.out.println("!!! ATENCIÓN: Intentando conectar a la URL -> " + url);
 		
 		try{
 			URL obj = new URL(url);
